@@ -1,0 +1,50 @@
+/***Main Styling Information***/
+
+body{
+    text-align: center;
+    background-color: black;
+    font-family:'Oswald', sans-serif; 
+    font-size: 30px;
+    }
+    
+    #question1, #question2, #question3, #question4, #question5, #results {
+      display:none;
+      width:750px;
+      font-family:'Oswald', sans-serif; 
+    }
+    
+    #quizarea
+    {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height:400px;
+      width:800px;
+      background-color: #ccc;
+      border-radius: 15px;
+      opacity: 75%;
+      font-size: 25px;
+    }
+    
+    .image{
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    /*** Fieldset and Legend ***/
+    legend {
+      background-color: #000;
+      color: #fff;
+      padding: 3px 6px;
+  }
+  
+  .output {
+      font: 1rem 'Fira Sans', sans-serif;
+  }
+  
+  input {
+      margin: .4rem;
+  }

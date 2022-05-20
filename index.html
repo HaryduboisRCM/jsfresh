@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--metadata--> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <!--Custom css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  </head>
+    <!--Body-->
+  <body>
+    <div class="image"> <img src="nebula.jpg" alt="Stellar Nebula"> </div>
+    <div class="container">     
+      <div id="quizarea">
+        <div id="title" >
+          <div class="col">
+            <h1 class="text-center">The Interstellar Destination Quiz!</h1>
+            <br />
+          </div>
+        </div>
+        <div id="questionarea">
+          
+            <!--intro content-->
+            <div id="intro" class="justify-content-center mx-auto">
+              <legend> <h2 class="text-center">Which Distant World Should I Visit?</h2> </legend>
+              <br /><br />
+              <p class="text-center">Complete the quiz to see where you'll end up!</p><br /><br />
+              <input type="button" value="Start Quiz"class="btn btn-success text-center" onclick="startQuiz()"/>
+            </div>
+            <form id="quizform">
+
+
+            <!--question 1-->
+
+            <fieldset>
+            <div id="question1" class="mx-auto">
+              <div class="row justify-content-center" >
+                <legend> <h2 class="text-center">How much do you like the heat and the sand?</h2> </legend>
+              </div>
+              <div class="row">
+                &nbsp;
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest1" id="a1" value=1 />
+                <label for="a1" class="text-center">a)  I love them both! The more, the better I say!</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest1" id="a2" value=7 />
+                <label for="a2">b) Urgh! It's hot AND sandy? Count me out...</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest1" id="a3" value=14  />
+                <label for="a3">c) They don't bother me, but I'm not crazy about them.</label>
+              </div>
+              <div class="row" class="justify-content-center">
+                <input type="button" value="Next"class="btn btn-success mx-auto" onclick="question2()"/>
+              </div>
+            </div>
+
+            <!--question 2-->
+            <div id="question2">
+              <div class="row justify-content-center">
+                <legend> <h2 class="text-center">Do you like local wildlife, especially if it's quite large?</h2> </legend>
+              </div>
+              <div class="row">
+                &nbsp;
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest2" id="a1" value=1 />
+                <label for="a1" class="text-center">a) Yes I do, I'll take the biggest safari you have please. </label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest2" id="a2" value=7 />
+                <label for="a2">b) I like animals,but nothing too big.</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest2" id="a2" value=14 />
+                <label for="a3">c) I'm here for the peace and quiet, not some nature tour!</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="button" value="Next"class="btn btn-success mx-auto" onclick="question3()"/>
+              </div>
+            </div>
+                        
+            <!--question 3-->
+            <div id="question3">
+                <div class="row justify-content-center">
+                 <legend> <h2 class="text-center">What sort of travel companions do you like to journey with?</h2> </legend>
+                </div>
+                <div class="row">
+                    &nbsp;
+                </div>
+                <div class="row justify-content-center">
+                    <input type="radio" name="quest3" id="a1" value="1" />
+                    <label for="a1" class="text-center">a)The kind who make plans within plans.</label>
+                </div>
+                <div class ="row justify-content-center">
+                    <input type="radio" name="quest3" id="a2" value="7" />
+                    <label for="a2" class="text-center">b)Rebels and rulebreakers are my tribe.</label>
+                </div>
+                <div class="row justify-content-center">
+                    <input type="radio" name="quest3" id="a3" value="14" />
+                    <label for="a3" class="text-center">c)Not a huge group,but definitely a cat.</label>
+                </div>
+                <div class="row justify-content-center">
+                    <input type="button" value="next" class="btn btn-success mx-auto" onclick="question4()" />
+                </div>          
+            </div>
+            
+            <!--question 4-->
+            <div id="question4">
+                <div class="row justify-content-center">
+                 <legend> <h2 class="text-center">Do you think you'll need a coat?</h2> </legend>
+                </div>
+                <div class="row">
+                    &nbsp;
+                </div>
+                <div class="row justify-content-center">
+                    <input type="radio" name="quest4" id="a1" value="1" />
+                    <label for="a1" class="text-center">a)Probably not, I look better in a suit.</label>
+                </div>
+                <div class ="row justify-content-center">
+                    <input type="radio" name="quest4" id="a2" value="7" />
+                    <label for="a2" class="text-center">b)Oh yeah, I never leave the house without my big coat!</label>
+                </div>
+                <div class="row justify-content-center">
+                    <input type="radio" name="quest4" id="a3" value="14" />
+                    <label for="a3" class="text-center">c)I'd just like to set off, who cares about a coat?</label>
+                </div>
+                <div class="row justify-content-center">
+                    <input type="button" value="next" class="btn btn-success mx-auto" onclick="question5()" />
+                </div>   
+            </div>
+             
+            <!--question 5-->
+            <div id="question5">
+                <div class="row justify-content-center">
+                 <legend> <h2 class="text-center">How long do you intend to stay?</h2> </legend>
+                </div>
+                <div class="row">
+                    &nbsp;
+                </div>
+                <div class="row justify-content-center">
+                    <input type="radio" name="quest5" id="a1" value="1" />
+                    <label for="a1" class="text-center">a)This place is ideal, I never want to leave!</label>
+                </div>
+                <div class="row justify-content-center">
+                    <input type="radio" name="quest5" id="a2" value="7" />
+                    <label for="a2" class="text-center">b)This is a weekend trip, as quick as it can be really.</label>
+                </div>
+                <div class="row justify-content-center">
+                    <input type="radio" name="quest5" id="a3" value="14" />
+                    <label for="a3" class="text-center">c)Few weeks, few months, it's all the same to me!</label>
+                </div>
+                <div class="row justify-content-center">
+                    <input type="button" value="results" class="btn btn-success mx-auto" onclick="results()" />
+                </div>
+            </div>
+            </fieldset>
+            </form>
+           
+            <!--Results-->
+            <div id="results" class="justify-content-center mx-auto">
+              <h2 class="text-center">The Planet of Your Dreams:</h2>
+              <br /><br />
+              <p class="text-center" id="result"></p>
+            </div>
+           
+        </div>
+      </div>
+    </div>
+    <!-- link to external JavaScript-->
+    <script src="quizCode.js" type="text/javascript"></script>
+  </body>
+</html>
