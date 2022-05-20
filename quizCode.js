@@ -31,6 +31,12 @@ function results() {
   document.getElementById("results").style.display = "inline-block";
 }
 
+function backtoquiz() {
+  document.getElementById("intro").style.display = "inline-block";
+  document.getElementById("results").style.display = "none";
+  location.reload();
+}
+
 /*** Results Calculations***/
 function calculateResults() {
   const radios1 = document.querySelectorAll('input[name="quest1"]');
